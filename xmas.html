@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며</title>
+
+    <meta property="og:image" content="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa2%2FA_Restaurant_Ready_For_Christmas_%2528240080703%2529.jpeg%2F1280px-A_Restaurant_Ready_For_Christmas_%2528240080703%2529.jpeg&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AA_Restaurant_Ready_For_Christmas_(240080703).jpeg&tbnid=j5VxsJxugl3hFM&vet=12ahUKEwiU_eX66fLtAhUrx4sBHTpkAPcQMygfegUIARDsAQ..i&docid=93-RdsPo93dTlM&w=1280&h=800&q=christmas%20800*400&ved=2ahUKEwiU_eX66fLtAhUrx4sBHTpkAPcQMygfegUIARDsAQ">
+    <meta property="og:title" content="재원이의 카드">
+    <meta property="og:description" content="2020을 추억하며">
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+    
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background: #9b070f;
+        }
+
+        .envelope {
+
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+            cursor:pointer;
+
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+        .letter-open{
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker.gif');
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            border: 10px solid white;
+            box-shadow: 0px 0px 10px 5px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top:30px;
+            margin-bottom: 30px;
+        }
+        .messagebox{
+            margin: auto;
+            background-color: ivory;
+            width:400px;
+            color:brown;
+            padding: 30px;
+            font-size:20px
+            
+            line-height 30px;
+            box-shadow: 0px 0px 10px 5px white;
+        }
+        .from{
+            text-align: right;
+            margin-bottom: 0px;
+        }
+        @media screen and (max-width: 760px) {
+            .messagebox{
+                width: 300px;
+                padding: 20px;
+            }
+            .rtan{
+            width:150px;
+            height:150px;
+            margin: 70px auto 0px auto;
+            }
+            h1{
+                font-size: 20px;
+
+            }
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+    <script>
+        
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan(){
+            alert('나경이 바보!');
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+
+    <div class="letter-open">
+    <div class="rtan" onclick = "go_rtan"></div>
+    <h1>2020년 수고 많았어!!</h1>
+
+    <div class="messagebox">
+        나경이에게!! <br />
+        맥북을 맞이한 나경아 <br />
+        너의 맥북은 내꺼야 <br />
+        내일 가져가도록할게 <br />
+        앞으로 그 맥북으로 열일할게^^ <br />
+        <p class = "from">2020.12.29 재원이가</p>
+    </div>
+    </div>
+</body>
+
+</html>
